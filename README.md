@@ -2,7 +2,7 @@
 
 
 <h2>Wprowadzenie</h2>
-Prosta aplikacja webowa w której szybko i przyjemnie zrobimy zakupy spożywcze. </br>
+Prosta aplikacja webowa w której szybko i przyjemnie zrobimy zakupy. </br>
 Repozytorium zawiera projekt zaliczeniowy z przedmiotu projektowanie bazodanowych aplikacji webowych. </br> 
 <h2>Technologie</h2>
 Przy realizacji projektu skorzystam z takich technologii jak: </br>
