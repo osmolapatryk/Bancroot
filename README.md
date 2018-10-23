@@ -1,8 +1,8 @@
 # Bancroot - OnlineShop
 
 ## Spis Treści
-*[Wprowadzenie](#Wprowadzenie)
-*[Technologie](#Technologie)
+* [Wprowadzenie](#Wprowadzenie) </br>
+* [Technologie](#Technologie) </br>
 
 ## Wprowadzenie
 Prosta aplikacja webowa w której szybko i przyjemnie zrobimy zakupy. </br>
