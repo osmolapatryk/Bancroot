@@ -69,7 +69,7 @@
 	<div id = "menu" >
 	
 			<div class="option"> <a href ="rejestr.php" > Rejestracja </a> </div>
-			<div class="option"> <a href ="index.php" > Logowanie </a> </div> </br>
+			<div class="option"> <a href ="start.php" > Logowanie </a> </div> </br>
 			
 			
 	</div>

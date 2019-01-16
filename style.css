@@ -61,10 +61,11 @@ body
 {
 	width:1023px;
 	height:530px;
-	background-color:#dddddd;
+	background-color:#ffffff;
 	float:left;
 	border-right: 2px solid #E6184F;
 	padding:10px;
+	font-size:16px;
 }
 
 #footer

@@ -41,7 +41,7 @@
 						echo "Witaj ".$_SESSION['log']."!";
 					?> 
 				</div>
-				<div id = "kosz" > <a href="kosz.php"> <img src = "img/kosz.jpg"> </img> </a>  </div>
+				<div id = "kosz" ><img src = "img/kosz.jpg"> </img> </a>  </div>
 				<div style="clear:both;"></div>			
 			</div>
 		</div>
@@ -49,60 +49,60 @@
 	
 	
 	<div id = "content">
-	
+		<form action = "koszwarzywa.php" method = "post" >
 			<div class="tile"> Burak czerwony - 1.89 zł\kg </br>
 				<img src = "img/beet.png" style = "margin-left:50px;"> </img> </br> </br>
-				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" min="1" max="20">	</br></br>
+				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" name = "burak" min="1" max="20">	</br></br>
 				
 			</div>
 			
 			<div class="tile"> Marchew - 2.49 zł\kg </br> <img src = "img/carrot.png" style = "margin-left:50px;"> </img> </br> </br>
-				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" min="1" max="20">	</br></br>
+				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" name = "marchew" min="1" max="20">	</br></br>
 				
 			</div> 
 				
 			<div class="tile"> Kukurydza - 3.99 zł\kg </br> <img src = "img/corn.png" style = "margin-left:50px;"> </img> </br> </br>
-				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" min="1" max="20">	</br></br>
+				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" name = "kukurydza" min="1" max="20">	</br></br>
 				
 			</div>
 			
 			<div class="tile"> Ogórki - 2.39 zł\kg </br> <img src = "img/cucumber.png" style = "margin-left:50px;"> </img> </br> </br>
-				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" min="1" max="20">	</br></br>
+				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" name = "ogorki" min="1" max="20">	</br></br>
 				
 			</div>
 			<div style="clear:both;">
 			
 			</div>	
 			<div class="tile"> Cebula - 2.99 zł\kg </br> <img src = "img/onion.png" style = "margin-left:50px;"> </img> </br> </br>
-				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" min="1" max="20">	</br></br>
+				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" name = "cebula" min="1" max="20">	</br></br>
 				
 			</div>
 			
 			<div class="tile"> Papryka czerwona 3.29 zł\kg </br> <img src = "img/pepper.png" style = "margin-left:50px;"> </img> </br> </br>
-				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" min="1" max="20">	</br></br>
+				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" name = "papryka" min="1" max="20">	</br></br>
 				
 			</div>
 			
 			<div class="tile"> Rzodkiewka - 1.99 zł\kg </br> <img src = "img/radish.png" style = "margin-left:50px;"> </img> </br> </br>
-				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" min="1" max="20">	</br></br>
+				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" name = "rzodkiewka" min="1" max="20">	</br></br>
 				 
 			</div>
 			
 			<div class="tile"> Pomidor - 0.49 zł </br> <img src = "img/tomato.png" style = "margin-left:50px;"> </img> </br> </br>
-				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" min="1" max="20">	</br></br>
+				<text style = "margin-left:50px;">Podaj ilość</> <input type="number" id="ile" name = "pomidor" min="1" max="20">	</br></br>
 				
 			</div>
 			
 			<div style="clear:both;"></div>	
-			<input type="button" id="zapisz" value="Do koszyka!">
-			
+			<input type="submit" id="zapisz" value="Do koszyka!">
+		</form>	
 			
 	</div>
 	
 	<div id = "menu" >
 	
-			<div class="option"> <a href ="rejestracja.php" > Rejestracja </a> </div>
-			<div class="option"> <a href ="index.php" > Logowanie </a> </div> </br>
+			<div class="option"> <a href ="rejestr.php" > Rejestracja </a> </div>
+			<div class="option"> <a href ="start.php" > Logowanie </a> </div> </br>
 			<div class="option"> <a href ="owoce.php" > Owoce </a> </div> 
 			<div class="option"> <a href ="warzywa.php" > Warzywa </div>
 			<div class="option"> <a href ="nabial.php" > Nabiał </div>
