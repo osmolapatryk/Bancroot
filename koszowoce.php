@@ -72,10 +72,7 @@
 			}
 			else 
 			{
-				//$rezult = @$pol->query("SELECT id_produktu,nazwa,cena FROM produkty WHERE kategoria = 'owoce'");
-					
-												
-				//$rezult->free_result();
+				
 					$b_sum = 0;
 					$j_sum = 0;
 					$br_sum = 0;
@@ -165,9 +162,9 @@
 						$rezult->free_result();
 					}
 					
-					$suma = $b_sum + $ar_sum + $m_sum + $a_sum + $br_sum + $g_sum + $cz_sum + $j_sum;
+					$_SESSION['suma'] = $b_sum + $ar_sum + $m_sum + $a_sum + $br_sum + $g_sum + $cz_sum + $j_sum;
 					
-					echo "</br></br> Suma: ".$suma." zł.";
+					echo "</br></br> Suma: ".$_SESSION['suma']." zł.";
 					
 					
 					
@@ -177,8 +174,10 @@
 
 			
 		?>
-		
-	</div>
+		<form action = "zatwierdz.php" method = "post" >
+			<input  type = "submit" value = "Zatwierdź" class = "form" >
+		</form>
+	</div> 
 	
 	<div id = "menu" >
 	

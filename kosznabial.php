@@ -161,9 +161,9 @@
 						$rezult->free_result();
 					}
 					
-					$suma = $g_sum + $t_sum + $m_sum + $j_sum + $ja_sum + $s_sum + $ml_sum + $mu_sum;
+					$_SESSION['suma'] = $g_sum + $t_sum + $m_sum + $j_sum + $ja_sum + $s_sum + $ml_sum + $mu_sum;
 					
-					echo "</br></br> Suma: ".$suma." zł.";
+					echo "</br></br> Suma: ".$_SESSION['suma']." zł.";
 					
 					
 				$pol->close();
@@ -171,6 +171,10 @@
 
 			
 		?>
+		<form action = "zatwierdz.php" method = "post" >
+			<input  type = "submit" value = "Zatwierdź" class = "form" >
+		</form>
+		
 	</div>
 	
 	<div id = "menu" >
