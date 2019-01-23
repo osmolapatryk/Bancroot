@@ -2,12 +2,25 @@
 
 	session_start();
 	
+	
+	
+	
+	
+	
 	if ((isset($_SESSION['logged'])) && ($_SESSION['logged']==true))
 	{
+		if($_SESSION['log'] == "Administrator")
+		{
+		header('Location:admin.php');
+		}
+		else
+		{	
 		header('Location: owoce.php');
 		exit();
+		}
 	}
-
+	
+	
 ?>
 
 

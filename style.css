@@ -66,7 +66,49 @@ body
 	border-right: 2px solid #E6184F;
 	padding:10px;
 	font-size:16px;
+	
 }
+#content2
+{
+	width:1023px;
+	height:530px;
+	background-color:#ffffff;
+	float:left;
+	border-right: 2px solid #E6184F;
+	padding:10px;
+	font-size:16px;
+	overflow:auto;
+	text-align:center;
+}
+
+#halfcont1
+{
+	float:left;
+	width:500px;
+	height:520px;
+	background-color:ffffff;
+	font-size:16px;
+	text-align:center;
+	border-right: 2px solid #E6184F;
+	overflow:auto;
+	
+	
+}
+
+#halfcont2
+{
+	float:left;
+	width:500px;
+	height:520px;
+	background-color:ffffff;
+	padding:10px;
+	font-size:16px;
+	text-align:center;
+	margin-left:520px;
+	margin-top:-540px;
+	
+}
+
 
 #footer
 {

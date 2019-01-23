@@ -41,7 +41,7 @@
 						echo "Witaj ".$_SESSION['log']."!";
 					?>
 				</div>
-				<div id = "kosz" ><img src = "img/kosz.jpg"> </img> </a>  </div>
+				<div id = "kosz" ><a href = "zamow.php"><img src = "img/kosz.jpg"> </img> </a>  </div>
 				<div style="clear:both;"></div>			
 			</div>
 		</div>

@@ -12,6 +12,7 @@
 	
 	$suma = $_SESSION['suma'];
 	$log = $_SESSION['log'];
+	$zam = $_SESSION['zamowienie'];
 	
 	$pol = @new mysqli($host, $db_user, $db_password, $db_name);
 	
@@ -23,7 +24,7 @@
 			else 
 			{
 				
-				@$pol->query("INSERT INTO zamowienie VALUES (NULL,'$suma','$log')");
+				@$pol->query("INSERT INTO zamowienie VALUES (NULL,'$suma','$log','$zam','oczekujace')");
 				
 				
 				

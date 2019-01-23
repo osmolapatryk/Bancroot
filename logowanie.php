@@ -33,12 +33,11 @@
 			$ile_userow = $rezult->num_rows;
 			if($ile_userow>0)
 			{
-				
-				//echo "Znalazło goscia o takim loginie".$log;
+			
 				$linia = $rezult->fetch_assoc();
 				
 				if(password_verify($pass,$linia['pass']))
-					//tu nie działa logowanko przez to haszowanie
+					
 				{
 					
 					$_SESSION['logged'] = true;
@@ -52,7 +51,15 @@
 					
 					unset($_SESSION['err']);
 					$rezult->free_result();
+					
+					if($_SESSION['log'] == "Administrator")
+					{
+						header('Location:admin.php');
+					}
+					else
+					{
 					header('Location:start.php');
+					}
 				}
 				else
 				{

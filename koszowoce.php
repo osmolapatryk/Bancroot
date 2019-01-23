@@ -52,7 +52,7 @@
 						echo "Witaj ".$_SESSION['log']."!";
 					?>
 				</div>
-				<div id = "kosz" > <img src = "img/kosz.jpg"> </img> </a>  </div>
+				<div id = "kosz" ><a href = "zamow.php"> <img src = "img/kosz.jpg"> </img> </a>  </div>
 				<div style="clear:both;"></div>			
 			</div>
 		</div>
@@ -81,6 +81,7 @@
 					$a_sum = 0;
 					$m_sum = 0;
 					$ar_sum = 0;
+					$zamowienie = "";
 					
 					if($banan > 0)
 					{
@@ -88,6 +89,7 @@
 						$wiersz = $rezult->fetch_assoc();
 						$b_sum = $wiersz['cena']*$banan;
 						echo $banan."x ".$wiersz['nazwa']." ".$wiersz['cena']."zł/szt razem: ".$b_sum." zł </br>";
+						$zamowienie = $banan."x ".$wiersz['nazwa']." cena: ".$b_sum." PLN </br> ";
 						
 						$rezult->free_result();
 					} 
@@ -98,6 +100,7 @@
 						$wiersz = $rezult->fetch_assoc();
 						$j_sum = $wiersz['cena']*$jablko;
 						echo $jablko."x ".$wiersz['nazwa']." ".$wiersz['cena']."zł/szt razem: ".$j_sum." zł </br>";
+						$zamowienie = $zamowienie.$jablko."x ".$wiersz['nazwa']." cena: ".$j_sum." PLN </br> ";
 						
 						$rezult->free_result();
 					}
@@ -109,6 +112,7 @@
 						$cz_sum = $wiersz['cena']*$czeresnie;
 						echo $czeresnie."x ".$wiersz['nazwa']." ".$wiersz['cena']."zł/kg razem: ".$cz_sum." zł </br>";
 						
+						$zamowienie = $zamowienie.$czeresnie."x ".$wiersz['nazwa']." cena: ".$cz_sum." PLN </br> ";
 						$rezult->free_result();
 					}
 					
@@ -118,6 +122,7 @@
 						$wiersz = $rezult->fetch_assoc();
 						$g_sum = $wiersz['cena']*$grejfrut;
 						echo $grejfrut."x ".$wiersz['nazwa']." ".$wiersz['cena']."zł/szt razem: ".$g_sum." zł </br>";
+						$zamowienie = $zamowienie.$grejfrut."x ".$wiersz['nazwa']." cena: ".$g_sum." PLN </br> ";
 						
 						$rezult->free_result();
 					}
@@ -128,6 +133,7 @@
 						$wiersz = $rezult->fetch_assoc();
 						$br_sum = $wiersz['cena']*$brzoskwinie;
 						echo $brzoskwinie."x ".$wiersz['nazwa']." ".$wiersz['cena']."zł/kg razem: ".$br_sum." zł </br>";
+						$zamowienie = $zamowienie.$brzoskwinie."x ".$wiersz['nazwa']." cena: ".$br_sum." PLN </br> ";
 						
 						$rezult->free_result();
 					}
@@ -138,6 +144,7 @@
 						$wiersz = $rezult->fetch_assoc();
 						$a_sum = $wiersz['cena']*$ananas;
 						echo $ananas."x ".$wiersz['nazwa']." ".$wiersz['cena']."zł/szt razem: ".$a_sum." zł </br>";
+						$zamowienie = $zamowienie.$ananas."x ".$wiersz['nazwa']." cena: ".$a_sum." PLN </br> ";
 						
 						$rezult->free_result();
 					}
@@ -148,6 +155,7 @@
 						$wiersz = $rezult->fetch_assoc();
 						$m_sum = $wiersz['cena']*$maliny;
 						echo $maliny."x ".$wiersz['nazwa']." ".$wiersz['cena']."zł/kg razem: ".$m_sum." zł </br>";
+						$zamowienie = $zamowienie.$maliny."x ".$wiersz['nazwa']." cena: ".$m_sum." PLN </br> ";
 						
 						$rezult->free_result();
 					}
@@ -158,13 +166,19 @@
 						$wiersz = $rezult->fetch_assoc();
 						$ar_sum = $wiersz['cena']*$arbuz;
 						echo $arbuz."x ".$wiersz['nazwa']." ".$wiersz['cena']."zł/szt razem: ".$ar_sum." zł </br>";
+						$zamowienie = $zamowienie.$arbuz."x ".$wiersz['nazwa']." cena: ".$ar_sum." PLN </br> ";
+						
 						
 						$rezult->free_result();
 					}
 					
+					$_SESSION['zamowienie'] = $zamowienie;
+					
 					$_SESSION['suma'] = $b_sum + $ar_sum + $m_sum + $a_sum + $br_sum + $g_sum + $cz_sum + $j_sum;
 					
 					echo "</br></br> Suma: ".$_SESSION['suma']." zł.";
+					
+					
 					
 					
 					
