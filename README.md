@@ -3,7 +3,7 @@
 ## Spis Treści
 * [Wprowadzenie](#Wprowadzenie) </br>
 * [Technologie](#Technologie) </br>
-*[Uruchomienie](#Uruchomienie) </br>
+* [Uruchomienie](#Uruchomienie) </br>
 
 ## Wprowadzenie
 Repozytorium zawiera projekt aplikacji webowej przedstawiającej sklep spożywczy, </br> 
