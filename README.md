@@ -19,9 +19,9 @@ Przy realizacji projektu skorzystam z takich technologii jak: </br>
 
 ## Uruchomienie
 Aby uruchomić aplikację musisz pobrać i zainstalować pakiet XAMPP. </br>
-Dzięki niemu uruchomisz swój lokalny serwer.
-Pliki z projektu należy umieścić w podfolderze XAMPP'a o nazwie htdocs.
-Następnie w przeglądarce wpisz adres:
-localhost/start.php
-W aplikacji wymagana jest rejestracja użytkownika.
+Dzięki niemu uruchomisz swój lokalny serwer. </br>
+Pliki z projektu należy umieścić w podfolderze XAMPP'a o nazwie htdocs. </br>
+Następnie w przeglądarce wpisz adres: </br>
+localhost/start.php </br>
+W aplikacji wymagana jest rejestracja użytkownika. </br>
 
